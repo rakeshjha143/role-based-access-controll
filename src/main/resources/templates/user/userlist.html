@@ -24,6 +24,7 @@
                 <th>Last Login</th>
                 <th>Introduction</th>
                 <th>Profile Details</th>
+                <th>Action Details</th>
             </tr>
         </thead>
         <tbody>
@@ -38,12 +39,12 @@
                 <td th:text="${user.user_intro}">Introduction</td>
                 <td th:text="${user.profiledetails}">Profile Details</td>
                
-              <!--   <td>
-                <a th:href="@{/edit/{role_id}(role_id=${role.role_id})}">Edit</a>
+                <td>
+                <a th:href="@{/edituser/{user_id}(user_id=${user.user_id})}">Edit</a>
                     &nbsp;&nbsp;&nbsp;
-                   <a th:href="@{/delete/{role_id}(role_id=${role.role_id})}">Delete</a>
+                   <a th:href="@{/deleteuser/{user_id}(user_id=${user.user_id})}">Delete</a>
 
-                </td> -->
+                </td>
             </tr>
         </tbody>
     </table>
